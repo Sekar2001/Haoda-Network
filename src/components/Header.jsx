@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '@fontsource/chakra-petch'; // Import the font
 import logo from '../assets/logo.png';
 
 const Header = () => {
@@ -25,23 +26,16 @@ const Header = () => {
 
           {/* Navigation Menu */}
           <nav className={`sm:flex ${isMenuOpen ? 'block' : 'hidden'} sm:block lg:flex`}>
-            <ul className="flex flex-col sm:flex-row sm:gap-4 lg:gap-4  sm:items-center gap-6 list-none items-center justify-start whitespace-nowrap ">
-              <li><a href="/" className="text-white text-lg hover:text-yellow-400">Home</a></li>
-              <li><a href="/ott" className="text-white text-lg hover:text-yellow-400">OTT</a></li>
-              <li><a href="/swipe" className="text-white text-lg hover:text-yellow-400">Swipe</a></li>
-              <li><a href="/game" className="text-white text-lg hover:text-yellow-400">Game</a></li>
-              <li><a href="/about" className="text-white text-lg hover:text-yellow-400">About Us</a></li>
-              <li><a href="/production" className="text-white text-lg hover:text-yellow-400">Production House</a></li>
-              <li><a href="/contact" className="text-white text-lg hover:text-yellow-400">Contact Us</a></li>
+            <ul className="flex flex-col sm:flex-row sm:gap-4 lg:gap-6  sm:items-center gap-6 list-none items-center justify-start whitespace-nowrap ">
+              <li><a href="/" className="text-white text-lg hover:text-yellow-400 font-chakra-petch">Home</a></li>
+              <li><a href="/ott" className="text-white text-lg hover:text-yellow-400 font-chakra-petch">OTT</a></li>
+              <li><a href="/swipe" className="text-white text-lg hover:text-yellow-400 font-chakra-petch">Swipe</a></li>
+              <li><a href="/game" className="text-white text-lg hover:text-yellow-400 font-chakra-petch">Game</a></li>
+              <li><a href="/about" className="text-white text-lg hover:text-yellow-400 font-chakra-petch">About Us</a></li>
+              <li><a href="/production" className="text-white text-lg hover:text-yellow-400 font-chakra-petch">Production House</a></li>
+              <li><a href="/contact" className="text-white text-lg hover:text-yellow-400 font-chakra-petch">Contact Us</a></li>
             </ul>
           </nav>
-        </div>
-
-        {/* Header Right */}
-        <div className="mt-4 sm:mt-0 sm:w-1/2 lg:w-auto sm:text-right w-full">
-          <button className="w-full sm:w-auto px-6 py-3 bg-yellow-500 text-white text-lg rounded-lg hover:bg-green-400">
-            Download App
-          </button>
         </div>
       </header>
     </div>

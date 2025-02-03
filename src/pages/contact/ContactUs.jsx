@@ -1,12 +1,12 @@
-import anime from "../assets/anime-girl.png";
-import image from "../assets/backimage.png";
-import clock from "../assets/wall-clock 1.png";
-import call from "../assets/phone-call.png";
-import mail from "../assets/mail.png";
+import anime from "../../assets/anime-girl.png";
+import image from "../../assets/backimage.png";
+import clock from "../../assets/wall-clock 1.png";
+import call from "../../assets/phone-call.png";
+import mail from "../../assets/mail.png";
 
 const ContactUs = () => {
   return (
-    <div className="bg-[#0d0d2b] text-white py-16 px-4 sm:px-8">
+    <div className="bg-[#0d0d2b] text-white py-16 px-4 sm:px-8" style={{flex:1}}>
       {/* Introduction Section */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
         {/* Left Column */}

@@ -13,20 +13,29 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <div className="flex flex-row sm:flex-col justify-center sm:justify-start gap-4">
-          <a href="/home" className="text-gray-400 hover:text-yellow-400">
+        <a href="/home" className="text-white hover:text-yellow-400">
+            Navigation
+          </a>
+          <a href="/home" className="text-white hover:text-yellow-400">
             Home
           </a>
-          <a href="/games" className="text-gray-400 hover:text-yellow-400">
-            Games
+          <a href="/ott" className="text-white hover:text-yellow-400">
+            OTT
           </a>
-          <a href="/movies" className="text-gray-400 hover:text-yellow-400">
-            Movies
+          <a href="/swipe" className="text-white hover:text-yellow-400">
+            Swipe
           </a>
-          <a href="/about" className="text-gray-400 hover:text-yellow-400">
-            About
+          <a href="/game" className="text-white hover:text-yellow-400">
+            Game
           </a>
-          <a href="/contact" className="text-gray-400 hover:text-yellow-400">
-            Contact
+          <a href="/about" className="text-white hover:text-yellow-400">
+            About Us
+          </a>
+          <a href="/production" className="text-white hover:text-yellow-400">
+            Production House
+          </a>
+          <a href="/contact" className="text-white hover:text-yellow-400">
+            Contact Us
           </a>
         </div>
 
@@ -55,7 +64,7 @@ const Footer = () => {
 
         {/* Callback Form */}
         <div className="flex flex-col gap-3 text-center sm:text-left">
-          <h5 className="text-lg sm:text-xl font-bold">Request a Callback</h5>
+          <h5 className="text-lg sm:text-xl ">Request a Callback</h5>
           <label>
             <span>Name</span>
             <input
