@@ -11,6 +11,7 @@ import Layout from "./components/Layout";
 import OTT from "./pages/ott/OTT";
 import Swipe from "./pages/swipe/Swipe";
 import Game from "./pages/game/Game";
+import ProductionHouse from "./pages/production/ProductionHouse";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/ott" element={<OTT />} />
         <Route path="/swipe" element={<Swipe />} />
         <Route path="/game" element={<Game />} />
+        <Route path="/production" element={<ProductionHouse />} />
 
         </Route>
       </Routes>

@@ -1,0 +1,159 @@
+.features-section {
+    background-color: #161829;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .curve-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .curve-image {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .features-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    padding: 0 2rem;
+    min-height: 200px;
+  }
+  
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 7);
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon-container {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-background {
+    background-color: #ffcc00;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .feature-title {
+    color: #ffcc00;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 14px;
+    
+  }
+  
+  .feature-description {
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 0.5rem;
+  }
+
+  .instantIntegration{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+  }
+
+  .endlessGameVariety{
+    position: absolute;
+    top: -25%;
+    left: 12%;
+  }
+
+  .centralizedManagement{
+    position: absolute;
+    top: 52%;
+    left: 25%;
+  }
+
+  .continuousUpdates{
+    position: absolute;
+    top: -5%;
+    left: 39%;
+  }
+
+  .customTournaments{
+    position: absolute;
+    top: -50%;
+    left: 56%;
+  }
+
+  .crypto-Friendly{
+    position: absolute;
+    top: 8%;
+    left: 70%;
+  }
+
+.support{
+position: absolute;
+top: 3%;
+right:0%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Assuming you add this CSS to your global styles or in the component's CSS file */
+
+/* Assuming you add this CSS to your global styles or component's CSS file */
+
+.choose-item {
+    position: relative;
+  }
+  
+  .choose-item:hover .choose-image {
+    filter: grayscale(100%) brightness(1000%);
+  }
+  
+  .choose-item:hover .choose-title {
+    color: white; /* Tailwind's green-400 color */
+  }
+  
+  .gameHaodaNetword div:nth-child(2){
+padding-top: 35px;
+  }
+  .gameHaodaNetword div:nth-child(3){
+padding-top: 35px;
+  }

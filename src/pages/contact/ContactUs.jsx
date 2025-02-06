@@ -1,144 +1,223 @@
-import anime from "../../assets/anime-girl.png";
-import image from "../../assets/backimage.png";
-import clock from "../../assets/wall-clock 1.png";
-import call from "../../assets/phone-call.png";
+import anime from "../../assets/anime.png";
+import image from "../../assets/image.png";
 import mail from "../../assets/mail.png";
-
+import phone from "../../assets/phone-call.png";
+import wall from "../../assets/wall-clock 1.png";
+import hand from "../../assets/hand.png";
+import tick from "../../assets/tick.png";
+import address from "../../assets/address.png";
+import quiz from "../../assets/quiz.png";
+import navigate from "../../assets/navigate.png";
 const ContactUs = () => {
   return (
-    <div className="bg-[#0d0d2b] text-white py-16 px-4 sm:px-8" style={{flex:1}}>
-      {/* Introduction Section */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
-        {/* Left Column */}
-        <div className="md:w-1/2 text-left">
-          <h2 className="text-yellow-400 text-xl sm:text-2xl md:text-3xl mb-4">
-            We’re here to help! Whether you have questions, feedback, or
-            partnership inquiries, our team is ready to assist you.
-          </h2>
+    <div className="relative w-full">
+      {/* Background Image */}
+      <div
+        className="w-full h-[60vh] bg-cover bg-center flex items-center"
+        style={{ backgroundImage: `url(${anime})` }}
+      >
+        {/* Text on Left */}
+        <div className="pl-16 text-yellow-400 text-3xl font-chakra-petch font-semibold">
+          We&apos;re here to help!
+          <p className="text-white text-lg font-inter">
+            Whether you have questions, feedback, or partnership
+            <br />
+            inquiries, our team is ready to assist you.
+          </p>
         </div>
+      </div>
 
-        {/* Right Column */}
-        <div className="md:w-1/2">
+      <div className="bg-[#1a1b2f] text-center py-6">
+        <h2 className="text-yellow-400 text-2xl font-semibold">Get in Touch</h2>
+        <div className="w-32 h-[2px] bg-yellow-400 mx-auto mt-2"></div>
+      </div>
+
+      {/* Image section */}
+      <div
+        className="w-full h-[60vh] bg-cover bg-center flex"
+        style={{ backgroundImage: `url(${image})` }}
+      >
+        <div className="flex flex-col justify-center pl-16 text-yellow-400 text-3xl font-semibold ml-32 ">
+          <h3>Contact Sales</h3>
+          <div className="flex flex-col justify-center ml-auto pr-16 space-y-4 mt-6">
+            <div className="flex items-center space-x-4">
+              <img src={mail} alt="Email Support Icon" className="w-8 h-8" />
+              <div>
+                <p className="text-white text-sm">
+                  Reach us for general support or queries
+                </p>
+                <p className="text-yellow-400 text-lg hover:text-white">
+                  support@haodanetwork.com
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <img src={phone} alt="Phone Support Icon" className="w-8 h-8" />
+              <div>
+                <p className="text-white text-sm">
+                  Have an urgent matter? Call our team at
+                </p>
+                <p className="text-yellow-400 text-lg hover:text-white">
+                  1-800-GAMING
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <img src={wall} alt="Business Hours Icon" className="w-8 h-8" />
+              <div>
+                <p className="text-white text-sm">
+                  Available Monday to Friday, from
+                </p>
+                <p className="text-yellow-400 text-lg hover:text-white">
+                  9 AM to 6 PM
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Partnership section */}
+      <div className="bg-[#1a1b2f] py-12 px-16 flex items-center space-x-8">
+        <div className="w-1/4 ml-24">
           <img
-            src={anime}
-            alt="Contact Illustration"
-            className="w-full h-auto rounded-lg"
+            src={hand}
+            alt="Handshake"
+            className="w-full rounded-lg shadow-lg"
           />
         </div>
+        <div className="w-3/4 ml-8">
+          <div className="flex items-center mb-4">
+            <img src={tick} alt="Check" className="w-6 h-6 mr-2 ml-4" />
+            <h2 className="text-yellow-400 text-3xl font-chakra-petch font-semibold">
+              Partnership Opportunities
+            </h2>
+          </div>
+          <ul className="text-white list-none pl-6 space-y-3 text-lg">
+            <li className="relative pl-5 text-2xl">
+              <span className="absolute left-0 top-3 w-3 h-3 bg-yellow-400 rounded-full"></span>
+              Are you a game developer or industry partner?
+            </li>
+            <li className="relative pl-5 text-2xl">
+              <span className="absolute left-0 top-3 w-3 h-3 bg-yellow-400 rounded-full"></span>
+              Let&apos;s work together to create incredible gaming experiences
+            </li>
+            <li className="relative pl-5 text-2xl">
+              <span className="absolute left-0 top-3 w-3 h-3 bg-yellow-400 rounded-full"></span>
+              Drop us an email at
+              <a
+                href="mailto:partners@haodanetwork.com"
+                className="text-yellow-400 font-semibold ml-1"
+              >
+                partners@haodanetwork.com
+              </a>
+              to start the conversation
+            </li>
+          </ul>
+        </div>
       </div>
 
-      {/* Get in Touch Heading */}
-      <div className="max-w-5xl mx-auto mt-16">
-        <h2 className="text-center text-yellow-400 text-2xl sm:text-3xl mb-8">
-          Get in Touch
+      {/* Community section */}
+      <div className="bg-[#0F1124] text-center py-6">
+        <h2 className="text-yellow-400 text-3xl font-semibold">
+          Join Our Community
         </h2>
+        <div className="w-32 h-[2px] bg-yellow-400 mx-auto mt-2"></div>
       </div>
 
-      {/* Background Image and Contact Form Section */}
-      <div
-        className="relative bg-cover bg-center text-white py-16 px-4 sm:px-8"
-        style={{
-          backgroundImage: `url(${image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="max-w-7xl mx-auto">
-          {/* Contact Form Section */}
-          <div className="flex flex-col md:flex-row bg-black bg-opacity-75 rounded-lg p-4 sm:p-8 shadow-lg mt-16 gap-8">
-            {/* Left Column */}
-            <div className="md:w-1/2 text-left">
-              <h3 className="text-green-400 text-lg sm:text-xl md:text-2xl mb-4">
-                Contact Us
-              </h3>
+      {/* Location and form section */}
+      <div className="bg-[#1a1b2f] py-12 px-16 flex items-start space-x-8">
+        {/* Location Section */}
+        <div className="w-1/4 ml-24 mt-32">
+          <h2 className="text-yellow-400 text-2xl font-semibold mb-4">
+            Location
+          </h2>
+          <img
+            src={address}
+            alt="Map"
+            className="w-full rounded-lg shadow-lg"
+          />
+          <p className="text-white mt-4 flex items-center space-x-2">
+            <img src={navigate} alt="Check" className="w-8 h-8" />
+            <span>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            </span>
+          </p>
+        </div>
 
-              {/* Email */}
-              <p className="mb-4 flex items-center">
-                <img src={mail} alt="Email Icon" className="w-8 h-auto mr-4" />
-                <span>
-                  For general support or queries, reach us at <br />
-                  <span className="text-yellow-400 text-base sm:text-lg">
-                    support@haodanetwork.com
-                  </span>
-                </span>
+        {/* Form Section */}
+        <div
+          className="min-h-screen bg-gray-900 flex items-center justify-center p-6 rounded-2xl"
+          style={{
+            backgroundImage: `url(${quiz})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="grid md:grid-cols-2 gap-8 w-full max-w-4xl  bg-opacity-20 p-8 rounded-lg shadow-lg">
+            {/* Contact Form */}
+            <div>
+              <h2 className="text-yellow-400 text-3xl ">Have a Question?</h2>
+              <p className="text-white text-xl italic mt-4 mb-6">
+                Fill out the form below, and we’ll get back to you as soon as
+                possible:
               </p>
 
-              {/* Phone */}
-              <p className="mb-4 flex items-center">
-                <img src={call} alt="Phone Icon" className="w-8 h-auto mr-4" />
-                <span>
-                  For urgent matters, contact our team at <br />
-                  <span className="text-yellow-400 text-base sm:text-lg">
-                    1-800 Gaming
-                  </span>
-                </span>
-              </p>
-
-              {/* Hours */}
-              <p className="mb-4 flex items-center">
-                <img src={clock} alt="Clock Icon" className="w-8 h-auto mr-4" />
-                <span>
-                  Available Monday to Friday, <br />
-                  <span className="text-yellow-400 text-base sm:text-lg">
-                    9 AM to 6 PM
-                  </span>
-                </span>
-              </p>
-            </div>
-
-            {/* Right Column */}
-            <div className="md:w-1/2">
-              <form className="flex flex-col space-y-4">
-                <div>
-                  <label
-                    className="block text-sm font-bold mb-2"
-                    htmlFor="name"
-                  >
+              <form className="space-y-6">
+                {/* Name */}
+                <div className="relative ">
+                  <label className="block text-sm font-medium text-gray-900 bg-yellow-500 px-6   md:absolute md:-top-2  md:left-4 md:rounded">
                     Name
                   </label>
                   <input
                     type="text"
-                    id="name"
-                    className="w-full p-2 border border-yellow-400 rounded-md text-black focus:outline-none"
-                    placeholder="Enter your name"
+                    className="w-full p-3 rounded  text-black"
+                    required
                   />
                 </div>
 
-                <div>
-                  <label
-                    className="block text-sm font-bold mb-2"
-                    htmlFor="email"
-                  >
+                {/* Email */}
+                <div className="relative ">
+                  <label className="block text-sm font-medium text-gray-900 bg-yellow-500 px-6   md:absolute md:-top-2  md:left-4 md:rounded">
                     Email
                   </label>
                   <input
                     type="email"
-                    id="email"
-                    className="w-full p-2 border border-yellow-400 rounded-md text-black focus:outline-none"
-                    placeholder="Enter your email"
+                    className="w-full p-3 rounded  text-black"
+                    required
                   />
                 </div>
 
-                <div>
-                  <label
-                    className="block text-sm font-bold mb-2"
-                    htmlFor="message"
-                  >
-                    Write
+                {/* Subject */}
+                <div className="relative ">
+                  <label className="block text-sm font-medium text-gray-900 bg-yellow-500 px-6   md:absolute md:-top-2  md:left-4 md:rounded">
+                    Subject
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full p-3 rounded  text-black"
+                    required
+                  />
+                </div>
+
+                {/* Message */}
+                <div className="relative ">
+                  <label className="block text-sm font-medium text-gray-900 bg-yellow-500 px-6   md:absolute md:-top-2  md:left-4 md:rounded">
+                    Message
                   </label>
                   <textarea
-                    id="message"
-                    className="w-full p-2 border border-yellow-400 rounded-md text-black focus:outline-none"
+                    className="w-full p-3 rounded  text-black"
                     rows="4"
-                    placeholder="Write your message"
+                    required
                   ></textarea>
                 </div>
 
+                {/* Submit Button */}
                 <button
                   type="submit"
-                  className="bg-yellow-400 text-black py-2 rounded-md hover:bg-yellow-500 transition"
+                  className="bg-yellow-400 text-black text-lg px-1 py-1 rounded w-2/4 hover:bg-yellow-500 transition"
                 >
-                  Send Message
+                  Submit
                 </button>
               </form>
             </div>
@@ -146,38 +225,12 @@ const ContactUs = () => {
         </div>
       </div>
 
-      {/* Partnership Section */}
-      <div className="bg-[#1b1b2f] text-white py-10 px-6 mt-10">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl text-yellow-400 mb-8">
-            Partnership Opportunities
-          </h2>
-          <div className="flex flex-col space-y-6">
-            {[  
-              "Are you a game developer or an industry partner?",
-              "Let’s collaborate to create incredible gaming experiences!",
-              "Drop us an email at partners@haodanetwork.com to start the conversation.",
-            ].map((text, index) => (
-              <div key={index} className="flex items-start space-x-4">
-                <div className="flex flex-col items-center">
-                  <div className="w-4 h-4 bg-yellow-400 rounded-full"></div>
-                  <div className="h-full w-[2px] bg-yellow-400"></div>
-                </div>
-                <p className="text-base sm:text-lg">{text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Join Community Section */}
-      <div className="bg-[#0d0d2b] text-white py-8 px-4 sm:px-8">
-        <h2 className="text-center text-yellow-400 text-2xl sm:text-3xl mb-4">
-          Join Our Community
-        </h2>
-        <p className="text-center text-gray-300 text-sm sm:text-base max-w-4xl mx-auto">
-          Stay connected and be part of the Haoda Network family!
-        </p>
+      {/* Footer section */}
+      <div className="bg-[#1a1b2f] text-yellow-400 justify-center text-center p-10">
+        <h1 className="text-2xl font-semibold italic">
+          We&apos;re excited to hear from you and help make your <br />
+          gaming experience unforgettable!
+        </h1>
       </div>
     </div>
   );

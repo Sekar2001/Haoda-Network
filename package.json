@@ -12,6 +12,8 @@
   "dependencies": {
     "@fontsource/chakra-petch": "^5.1.1",
     "@fontsource/inter": "^5.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.9",
     "font-awesome": "^4.7.0",
