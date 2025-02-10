@@ -12,7 +12,7 @@ import OTT from "./pages/ott/OTT";
 import Swipe from "./pages/swipe/Swipe";
 import Game from "./pages/game/Game";
 import ProductionHouse from "./pages/production/ProductionHouse";
-
+import './assets/css/responsive.css'
 const App = () => {
   return (
     <Router>

@@ -1,28 +1,31 @@
 import swipe from "../../assets/swipe.png";
+import rectangle from "../../assets/rectangle.svg";
 
 const Swipe = () => {
   return (
-    <div className="relative w-full">
-      {/* Container */}
-      <div className="container mx-auto">
-        {/* Background Image */}
-        <div
-          className="w-full h-[60vh] bg-cover bg-center flex items-center"
-          style={{ backgroundImage: `url(${swipe})` }}
-        >
-          {/* Text on Left */}
-          <div className="pl-16 text-yellow-400 text-3xl font-chakra-petch font-semibold">
-            Swipe
-          </div>
-        </div>
-
-        {/* Coming Soon Section */}
-        <div className="bg-[#1a1b2f] text-center py-6">
-          <h2 className="text-yellow-400 text-2xl font-semibold">Coming Soon</h2>
-          <div className="w-32 h-[2px] bg-yellow-400 mx-auto mt-2"></div>
-        </div>
-      </div>
-    </div>
+    <>
+         {/* Background Section */}
+         <div
+           className="w-full h-[420px] bg-cover bg-center flex items-center"
+           style={{ backgroundImage: `url(${swipe})` }}
+         >
+           {/* Container */}
+           <div className="container mx-auto px-4">
+             {/* Text on Left */}
+             <div className="text-yellow-400 text-3xl font-chakra-petch font-semibold">
+               Swipe
+             </div>
+           </div>
+         </div>
+   
+         {/* Coming Soon Section */}
+         <div className="bg-[#1F2131] text-center py-8">
+           <div className="container mx-auto px-4">
+             <h2 className="text-yellow-400 text-2xl font-semibold">Coming Soon</h2>
+             <img src={rectangle} alt="Rectangle" className="mx-auto mt-4" />
+           </div>
+         </div>
+       </>
   );
 };
 
