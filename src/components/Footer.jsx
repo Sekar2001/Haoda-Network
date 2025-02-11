@@ -119,6 +119,33 @@ const Footer = () => {
               <i className="fa fa-linkedin"></i>
             </a>
           </div>
+          {/* Social Media Links */}
+          <div className="flex flex-row sm:flex-col justify-center sm:justify-start gap-4">
+            <a
+              href="https://instagram.com"
+              className="flex items-center justify-center w-10 h-10 rounded-full text-black bg-yellow-400"
+            >
+              <i className="fa fa-instagram"></i>
+            </a>
+            <a
+              href="https://facebook.com"
+              className="flex items-center justify-center w-10 h-10 rounded-full text-black bg-yellow-400"
+            >
+              <i className="fa fa-facebook"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              className="flex items-center justify-center w-10 h-10 rounded-full text-black bg-yellow-400"
+            >
+              <i className="fa fa-twitter"></i>
+            </a>
+            <a
+              href="https://linkedin.com"
+              className="flex items-center justify-center w-10 h-10 rounded-full text-black bg-yellow-400"
+            >
+              <i className="fa fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
