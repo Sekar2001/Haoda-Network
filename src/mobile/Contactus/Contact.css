@@ -1,0 +1,247 @@
+.contact__background_img {
+    background-image: url('../../assets/anime.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.contact__second__background {
+   background-image: url('../../assets/image.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+}
+
+.contact_question_background {
+   background-image: url('../../assets/quiz.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+}
+
+.contact_sales_background {
+   background: #140C2C;
+}
+
+.comming__soon__backround {
+   background: #140C2C;
+}
+
+.contact_sales_icon {
+   color: #fff;
+   font-size: 34px;
+}
+
+.contact_sales_heading {
+      color: rgba(255, 213, 45, 0.963);
+      font-size: 15px;
+}
+
+.contact_sales_text {
+   color: #fff;
+   font-size: 15px;
+}
+
+.underline1 {
+   display: flex;
+   background-color: rgba(255, 213, 45, 0.963);  
+   height: 2px;
+   width: 100px;
+}
+
+.underline2 {
+   display: flex;
+   background-color: rgba(255, 213, 45, 0.963);  
+   height: 15px;
+   width: 15px;
+}
+
+.underline3 {
+   background-color: rgba(255, 213, 45, 0.963);
+}
+
+.contact__sales__heading {
+      color: rgba(255, 213, 45, 0.963);
+      font-size: 20px;
+}
+
+.partnership__background {
+   background: #140C2C;
+   border-left: 2px rgba(255, 213, 45, 0.963);
+   
+}
+
+.partnership__box {
+   border-color: rgba(255, 213, 45, 0.963);
+}
+
+
+
+.partnership__text {
+   color: #fff;
+   font-size: 15px;
+}
+
+.partnership__text_yelow {
+   color: rgba(255, 213, 45, 0.963);
+   font-size: 15px;
+}
+
+.partnerchip {
+   right: 107%;
+   top: 30% ;
+}
+
+.partnerchip2 {
+  right: 105%;
+}
+
+@media all and (max-width:768px) {
+   .partnerchip {
+       right: 106.5%;
+       top: 30% ;
+  }
+  
+  .partnerchip2 {
+      right: 105%;
+  }
+}
+
+@media all and (max-width:708px) {
+   .partnerchip {
+       right: 107%;
+       top: 30% ;
+  }
+  
+  .partnerchip2 {
+      right: 105%;
+  }
+}
+
+@media all and (max-width:640px) {
+   .partnerchip {
+      right: 103%;
+      top: 30% ;
+  }
+  
+  .partnerchip2 {
+     right: 101.5%;
+  }
+}
+
+@media all and (max-width:450px) {
+   .partnerchip {
+       right: 105%;
+       top: 30% ;
+  }
+  
+  .partnerchip2 {
+      right: 102%;
+  }
+}
+
+.world_map {
+   width: 400px;
+}
+
+.world_map_border {
+   border-color: rgba(255, 213, 45, 0.963);
+}
+
+.world_map_page {
+   background: #140C2C;
+}
+
+.world_map_text {
+   color: rgba(255, 213, 45, 0.963);
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.location_icon {
+   color: rgba(255, 213, 45, 0.963);
+   font-size: 40px;
+}
+
+.contact_question_heading{
+   color: rgba(255, 213, 45, 0.963);
+   font-size: 20px;
+}
+
+.contact_question_text{
+   width: 300px;
+   color: #fff;
+   font-size: 15px;
+}
+
+@media only screen and (max-width:400px) {
+   .contact_question_text{
+      width: 100%;
+      color: #fff;
+      font-size: 15px;
+   }
+}
+
+.map_img  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.map_img img {
+   width: 90%;
+}
+
+.name_input  {
+    width: 60%;
+    font-size: 14px;
+}
+
+.message_input {
+    width: 60%;
+    height: 90px;
+}
+
+@media only screen and (max-width:500px) {
+   .name_input {
+       padding: 8px;
+       font-size: 12px;
+   }
+}
+
+@media all and (max-width:450px) {
+   .name_input  {
+       width: 80%;
+       font-size: 14px;
+  }
+  
+  .message_input {
+       width: 80%;
+       height: 90px;
+  }
+}
+
+.name_span {
+   background-color: rgba(255, 213, 45, 0.963);
+   font-weight: 600;
+   font-size: 12px;
+}
+
+.contact_submit_btn {
+   background-color: rgba(255, 213, 45, 0.963);
+   font-weight: 600;
+   font-size: 12px;
+   padding: 3px 16px;
+   border-radius: 5px;
+}
+
+.contactus_bottom_text {
+    color: rgba(255, 213, 45, 0.963);
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+   background: #140C2C;
+}

@@ -1,0 +1,7 @@
+.game__background_img {
+    background-image: url("../../assets/gaming.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}

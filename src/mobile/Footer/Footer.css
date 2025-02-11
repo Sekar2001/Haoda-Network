@@ -1,0 +1,19 @@
+.footer__background {
+    background: #140C2C;
+}
+
+.follow__us__icon {
+    background-color: rgba(255, 213, 45, 0.963);
+    color: black;
+}
+
+.follow__us__heading {
+    font-size: 20px;
+    color: #fff;
+}
+
+.contact_us_heading {
+    font-size: 20px;
+    color: rgba(255, 213, 45, 0.963);
+    font-weight: 600;
+}

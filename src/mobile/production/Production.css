@@ -1,0 +1,72 @@
+.production_house_background {
+    background-image: url("../../assets/prod.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.production_house_background_img {
+    background-image: url("../../assets/production.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.comming__soon__backgroun {
+    background-color: #140C2C;
+}
+
+.name__input {
+    width: 100%;
+    background-color: #fff;
+}
+
+.name__text {
+    font-family: poppins;
+    background-color: rgba(255, 213, 45, 0.963);
+    font-weight: 500;
+}
+
+.share_about__text {
+    font-family: poppins;
+    background-color: rgba(255, 213, 45, 0.963);
+    font-weight: 500;
+    left: 4%;
+}
+
+.message__text {
+    font-family: poppins;
+    background-color: rgba(255, 213, 45, 0.963);
+    font-weight: 500;
+}
+
+.contact__box {
+    background: #140C2C;
+}
+
+.instagram_link__input {
+    width: 100%;
+    background-color: #fff;
+    
+}
+
+.instagram__text {
+    font-family: poppins;
+    background-color: rgba(255, 213, 45, 0.963);
+    font-weight: 500;
+    left: 4%;
+}
+
+.share_about__input {
+    width: 100%;
+    background-color: #fff;
+    height: 170px;
+}
+
+.register__btn {
+    background-color: rgba(255, 213, 45, 0.963);
+    width: 150px;
+    font-weight: 600;
+}

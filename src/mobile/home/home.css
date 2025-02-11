@@ -1,0 +1,524 @@
+.homepage__background {
+    background-image: url('../../assets/thumb.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.Games__HaodaNetwork__background_img {
+    background-image: url('../../assets/wave.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.Games__HaodaNetwork__background_img2 {
+    background-image: url('../../assets/lines.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+
+.welcome__text {
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+.Haoda__text {
+    font-weight: 600;
+    font-size: 54px;
+    text-align: center;
+    color:#FEBD19
+}
+
+.homepage__para {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen and (max-width:500px) {
+    .Haoda__text {
+        line-height: 110%; 
+        padding-top: 5px;
+    }
+    .homepage__para {
+        padding: 0px 10px;
+        margin-top: 15px;
+    }
+    .homepage__background {
+        padding: 20px;
+    }
+}
+
+.top-tier__background {
+    background: #140c2ce4;
+}
+
+.top-tier__para {
+    
+    font-size: 15px;
+    text-align: center;
+    color: #FEBD19
+}
+
+@media only screen and (max-width:500px){
+    .top-tier__para {
+        padding: 0px 20px;
+    }
+    .Games__HaodaNetwork__para {
+        padding: 0px 20px;
+    }
+    .home_dropdown_page {
+        padding: 0px 15px;
+    }
+}
+
+.slide_image {
+    width: 200px ;
+    height: 200px;
+}
+
+.Games__HaodaNetwork__background {
+    background: #1E2030;
+}
+
+.background_color {
+    background: #1E2030;
+}
+
+.getting_start_background_color {
+    background: #1D1F2F;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #FEBD19
+}
+
+.Games__HaodaNetwork__heading {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color:#FEBD19
+}
+
+.Games__HaodaNetwork__para {
+   
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+.all-in-one-hub {
+     font-size: 24px;
+     font-weight: 600;
+     color: #FEBD19
+}
+
+.all-in-one-hub-icon {
+    background-color: #FEBD19;
+    color: black;
+    font-weight: 1500;
+    font-size: 30px;
+} 
+
+@media only screen and (max-width:500px) {
+    .all-in-one-hub {
+        font-size: 18px;
+    }
+    .games_ensure_text {
+        padding: 20px;
+    }
+}
+
+.collapse {
+    border-color:#FEBD19;
+}
+
+.getting_start_box {
+     width: 60%;
+     height: 200px;
+     background-color: #FEFFF2;
+     border-radius: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.getting_start_arrow {
+     font-size: 60px;
+     color: #FEBD19;
+}
+
+.getting_start_circlebox {
+    font-size: 70px;
+    background-color: #FEBD19;
+    color: #fff;
+    padding: 20px;
+    border-radius: 100%;
+}
+ 
+@media only screen and (max-width:560px) {
+    .getting_start_circlebox {
+        font-size: 50px;
+        background-color:#FEBD19;
+        color: #fff;
+        padding: 20px;
+        border-radius: 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .getting_start_box {
+        width: 80%;
+        height: 150px;
+    }
+    .getting_start_circlebox {
+        font-size: 30px;
+        bottom: 80%;
+    }
+    .getting_start_arrow {
+        font-size: 40px;
+
+    }
+}
+
+.swiper_pagination {
+    color: #fff;
+}
+
+.swiper_image {
+    height: 200px;
+    width: 200px;
+ }
+
+ .swiper_container img {
+    width: 220px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+ }
+
+ @media only screen and (max-width:500px) {
+    .swiper_container img {
+        width: 150px;
+        height: 150px;
+        transition: transform 0.3s ease-in-out;
+     }
+ }
+
+ .name__text {
+    font-size: 12px;
+    font-weight: 500;
+    bottom: 80%;
+    left: 4%;
+}
+
+.instagram__text {
+    font-size: 12px;
+    font-weight: 500;
+    bottom: 80%;
+    left: 4%;
+}
+.message__text {
+    font-size: 12px;
+    font-weight: 500;
+    bottom: 90%;
+    left: 4%;
+}
+
+
+ @media only screen and (max-width:500px) {
+    .name__input {
+        padding: 13px;
+        font-size: 12px;
+    }
+    .name__text {
+        font-size: 12px;
+        font-weight: 500;
+        bottom: 80%;
+        left: 4%;
+    }
+    .instagram_link__input {
+        padding: 13px;
+        font-size: 12px;
+    }
+    .instagram__text {
+        font-size: 12px;
+        font-weight: 500;
+        bottom: 80%;
+        left: 4%;
+    }
+    .message__text {
+        font-size: 12px;
+        font-weight: 500;
+        bottom: 90%;
+        left: 4%;
+    }
+
+}
+
+ .slick-center .carousel-image {
+    transform: scale(1.8);
+    transition: transform 0.3s ease-in-out;
+  }
+
+/* .slick-center .carousel-image {
+    transform: scale(1.8);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  } */
+  
+  .slick-slide {
+    padding: 0 10px;
+  }
+
+  .slideactive {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    opacity: 1;
+  }
+
+  .slide {
+    transform: scale(10.5);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet {
+     background-color: white;
+  }
+
+  .swiper_pagination  {
+      color: white;
+  }
+
+  .swiper_pagination {
+       color: white;
+  }
+
+
+  .Instant-Integration-box {
+    width: 200px;
+  }
+
+  .Instant-Integration-circlebox {
+    font-size: 40px;
+    background-color:#FEBD19;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+@media only screen and (max-width:768px) {
+    .hypen_text {
+        font-size: 85px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .hypen_text {
+         font-size: 75px;
+    }
+}
+
+  @media only screen and (max-width:500px){
+    .hypen_text {
+         font-size: 60px;
+    }
+  }
+
+  @media only screen and (max-width:450px){
+    .hypen_text {
+         font-size: 55px;
+    }
+  }
+  @media only screen and (max-width:400px){
+    .hypen_text {
+         font-size: 43px;
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    
+    .Instant-common-box {
+        position: relative;
+        overflow: auto;
+      }
+    
+      .Instant-Integration-box1 {
+          position: absolute;
+          bottom: 13%;
+      }
+    
+      .Instant-Integration-box2 {
+          position: absolute;
+          top: 15%;
+          left: 40%;
+      }
+    
+      .Instant-Integration-box3 {
+          position: absolute;
+          left: 80%;
+          bottom: 13%;
+      }
+    
+      .Instant-Integration-box4 {
+         position: absolute;
+         left: 120%;
+         top: 20%;
+      }
+    
+      .Instant-Integration-box6 {
+        position: absolute;
+        left: 200%;
+        top: 20%;
+     }
+    
+     .Instant-Integration-box5 {
+        position: absolute;
+        left: 160%;
+        bottom: 18%;
+    }
+    
+    .Instant-Integration-box7 {
+        position: absolute;
+        left: 240%;
+        bottom: 18%;
+     }
+
+}
+
+@media only screen and (max-width:640px) {
+    .Instant-common-box {
+        position: relative;
+        overflow: auto;
+      }
+    
+      .Instant-Integration-box1 {
+          position: absolute;
+          bottom: 13%;
+      }
+    
+      .Instant-Integration-box2 {
+          position: absolute;
+          top: 15%;
+          left: 40%;
+      }
+    
+      .Instant-Integration-box3 {
+          position: absolute;
+          left: 80%;
+          bottom: 13%;
+      }
+    
+      .Instant-Integration-box4 {
+         position: absolute;
+         left: 120%;
+         top: 20%;
+      }
+    
+      .Instant-Integration-box6 {
+        position: absolute;
+        left: 200%;
+        top: 20%;
+     }
+    
+     .Instant-Integration-box5 {
+        position: absolute;
+        left: 160%;
+        bottom: 18%;
+    }
+    
+    .Instant-Integration-box7 {
+        position: absolute;
+        left: 240%;
+        bottom: 18%;
+     }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

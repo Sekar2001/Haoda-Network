@@ -1,28 +1,29 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import './App.css'
 import '@fontsource/chakra-petch'; // Import the font
 import '@fontsource/inter'; // Import the font
 
 
 
-import AboutUs from "./pages/about/AboutUs"; 
-import ContactUs from "./pages/contact/ContactUs";
-import Home from "./pages/home/Home";
+import AboutUs from "./pages/about"; 
+import ContactUs from "./pages/contact";
+import Home from "./pages/home";
 import Layout from "./components/Layout";
-import OTT from "./pages/ott/OTT";
-import Swipe from "./pages/swipe/Swipe";
-import Game from "./pages/game/Game";
-import ProductionHouse from "./pages/production/ProductionHouse";
-
+import OTT from "./pages/ott";
+import Swipe from "./pages/swipe";
+import Game from "./pages/game";
+import ProductionHouse from "./pages/production";
+import './assets/css/responsive.css'
 const App = () => {
   return (
-    <Router>
+   <div className="App"> <Router>
       
       <Routes>
        <Route element={<Layout/>}>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/contactus" element={<ContactUs />} />
         <Route path="/ott" element={<OTT />} />
         <Route path="/swipe" element={<Swipe />} />
         <Route path="/game" element={<Game />} />
@@ -31,7 +32,7 @@ const App = () => {
         </Route>
       </Routes>
       
-    </Router>
+    </Router></div>
   );
 };
 

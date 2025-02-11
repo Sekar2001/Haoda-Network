@@ -1,0 +1,39 @@
+.navbar__container {
+    width: 100%;
+}
+
+.isSubMenuOpentrue {
+    transform: translate(70%);
+}
+
+.isSubMenuOpenfalse {
+    transform: translate(180%);
+}
+
+.navbar__width{
+    width: calc(60% - 1em);
+}
+
+@media only screen and (max-width:500px) {
+    .isSubMenuOpentrue {
+        transform: translate(40%);
+    }
+    .navbar__width{
+        width: calc(90% - 5em);
+    }  
+    .isSubMenuOpenfalse {
+        transform: translate(250%);
+    } 
+}
+
+@media only screen and (max-width:380px) {
+    .isSubMenuOpentrue {
+        transform: translate(20%);
+    }
+    .navbar__width{
+        width: 300px;
+    }  
+    .isSubMenuOpenfalse {
+        transform: translate(150%);
+    } 
+}

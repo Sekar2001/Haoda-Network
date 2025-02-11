@@ -35,34 +35,35 @@ import lines from "../../assets/lines.png";
 import attach from "../../assets/attach.png";
 import "../home/Home.css";
 
-const Home = () => {
+const HomeDesktop = () => {
   return (
     <>
       {/* Hero Section */}
       <div
-        className="min-h-screen flex flex-col bg-cover bg-center relative before:absolute before:inset-0 before:bg-black/50"
+        className="min-h-[752px]screen flex flex-col bg-cover bg-center relative before:absolute before:inset-0 before:bg-black/50"
         style={{ backgroundImage: `url(${thumb})` }}
       >
-        <div className="flex flex-col items-center justify-center h-full relative z-10">
+        <div className="container mx-auto flex flex-col items-center justify-center h-full relative z-10">
           <div className="text-center text-white p-8 bg-black bg-opacity-10 rounded-lg">
-            <h1 className="mt-16 text-3xl  font-bold sm:text-4xl md:text-5xl lg:text-6xl text-white font-chakra-petch leading-tight">
+            <h1 className="mt-16 text-3xl  font-extrabold sm:text-4xl md:text-5xl lg:text-7xl text-white font-chakra-petch leading-tight">
               Welcome to <br />
               <span className="text-yellow-400 font-bold mt-2">
                 Haoda Network
               </span>
             </h1>
-            <p className="mt-6 text-lg text-white">
+            <p className="mt-6 text-2xl text-white font-inter">
               The ultimate entertainment experience where gaming, streaming, and
               <br />
               mobile game subscriptions collide!
             </p>
-            <span className="text-yellow-400 mt-4">
+
+            <p className="text-yellow-400 font-inter text-[17px] mt-6">
               Access top-tier mobile games, exclusive OTT content, and endless
               fun all in one place
-            </span>
+            </p>
 
             {/* Search Input and Button */}
-            <div className="flex items-center ml-16 w-full max-w-md border overflow-hidden mt-16">
+            <div className="flex items-center ml-40 w-[639px] max-w-md border overflow-hidden mt-16 ">
               <input
                 type="text"
                 placeholder="OTT, Games"
@@ -84,140 +85,144 @@ const Home = () => {
         className="bg-[#161829] text-white bg-cover "
         style={{ backgroundImage: `url(${wave})` }}
       >
-        <div className="text-2xl text-center p-6">
-          <h3 className="text-yellow-400">Why Choose Haoda Network?</h3>
+        <div className="container mx-auto text-[24px] text-center p-6">
+          <h3 className="text-yellow-400 font-inter  font-semibold">
+            Why Choose Haoda Network?
+          </h3>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 p-5 bg-[#1F2131]">
-          <div className="choose-item text-center p-4">
-            <img
-              src={hub}
-              alt="All-in-one hub"
-              className="choose-image w-12 h-12 mx-auto mb-4 transition duration-300"
-            />
-            <h4 className="choose-title text-lg text-yellow-400">
-              All-in-one hub
-            </h4>
-            <p className="text-white">
-              Enjoy premium games and top-rated streaming content without
-              switching platforms.
-            </p>
-          </div>
+        <div className=" bg-[#1F2131] ">
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 p-5">
+            <div className="choose-item text-center p-4">
+              <img
+                src={hub}
+                alt="All-in-one hub"
+                className="choose-image w-12 h-12 mx-auto mb-4 transition duration-300"
+              />
+              <h4 className="choose-title font-inter text-lg text-yellow-400">
+                All-in-one hub
+              </h4>
+              <p className="text-white font-inter text-[16px]">
+                Enjoy premium games and top-rated streaming content without
+                switching platforms.
+              </p>
+            </div>
+            <div className="choose-item text-center p-4">
+              <img
+                src={location}
+                alt="Play Anytime, Anywhere"
+                className="choose-image w-12 h-12 mx-auto mb-4 transition duration-300"
+              />
+              <h4 className="choose-title text-lg font-inter text-yellow-400">
+                Play Anytime, Anywhere
+              </h4>
+              <p className="text-white font-inter text-[16px]">
+                Enjoy gaming and streaming on any device, anytime,
+                interruption-free.
+              </p>
+            </div>
 
-          <div className="choose-item text-center p-4">
-            <img
-              src={location}
-              alt="Play Anytime, Anywhere"
-              className="choose-image w-12 h-12 mx-auto mb-4 transition duration-300"
-            />
-            <h4 className="choose-title text-lg text-yellow-400">
-              Play Anytime, Anywhere
-            </h4>
-            <p className="text-white">
-              Enjoy gaming and streaming on any device, anytime,
-              interruption-free.
-            </p>
-          </div>
+            <div className="choose-item text-center p-4">
+              <img
+                src={diamond}
+                alt="Exclusive Access"
+                className="choose-image w-12 h-12 mx-auto mb-4 transition duration-300"
+              />
+              <h4 className="choose-title text-lg font-inter text-yellow-400">
+                Exclusive Access
+              </h4>
+              <p className="text-white font-inter text-[16px]">
+                Get early releases, premium features, and exclusive games with
+                unlimited streaming.
+              </p>
+            </div>
+            <div className="choose-item text-center p-4">
+              <img
+                src={navi}
+                alt="Effortless Navigation"
+                className="choose-image w-12 h-12 mx-auto mb-4 transition duration-300"
+              />
+              <h4 className="choose-title text-lg font-inter text-yellow-400">
+                Effortless Navigation
+              </h4>
+              <p className="text-white font-inter text-[16px]">
+                Switch between games and shows seamlessly with our user-friendly
+                interface.
+              </p>
+            </div>
 
-          <div className="choose-item text-center p-4">
-            <img
-              src={diamond}
-              alt="Exclusive Access"
-              className="choose-image w-12 h-12 mx-auto mb-4 transition duration-300"
-            />
-            <h4 className="choose-title text-lg text-yellow-400">
-              Exclusive Access
-            </h4>
-            <p className="text-white">
-              Get early releases, premium features, and exclusive games with
-              unlimited streaming.
-            </p>
-          </div>
-
-          <div className="choose-item text-center p-4">
-            <img
-              src={navi}
-              alt="Effortless Navigation"
-              className="choose-image w-12 h-12 mx-auto mb-4 transition duration-300"
-            />
-            <h4 className="choose-title text-lg text-yellow-400">
-              Effortless Navigation
-            </h4>
-            <p className="text-white">
-              Switch between games and shows seamlessly with our user-friendly
-              interface.
-            </p>
-          </div>
-
-          <div className="choose-item text-center p-4">
-            <img
-              src={up}
-              alt="Stay Updated"
-              className="choose-image w-12 h-12 mx-auto mb-4 transition duration-300"
-            />
-            <h4 className="choose-title text-lg text-yellow-400">
-              Stay Updated
-            </h4>
-            <p className="text-white">
-              Discover fresh games and new content regularly with exciting
-              updates.
-            </p>
+            <div className="choose-item text-center p-4">
+              <img
+                src={up}
+                alt="Stay Updated"
+                className="choose-image w-12 h-12 mx-auto mb-4 transition duration-300"
+              />
+              <h4 className="choose-title text-lg font-inter text-yellow-400">
+                Stay Updated
+              </h4>
+              <p className="text-white font-inter text-[16px]">
+                Discover fresh games and new content regularly with exciting
+                updates.
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Ultimate Gaming Section */}
-        <div className="bg-[#161829] p-4 mt-2 flex justify-center items-center">
-          <p className="text-yellow-400 text-center text-sm sm:text-base lg:text-lg">
+        <div className="bg-[#1F2131] p-4 mt-2 flex justify-center items-center">
+          <p className="text-yellow-400 text-center font-semibold font-inter text-[24px]">
             Your ultimate gaming and streaming destination awaits!
           </p>
         </div>
 
         <div className="bg-[#0d0e1a] text-white py-12 px-6 text-center mt-2">
-          <h2 className="text-xl md:text-2xl font-semibold mb-6">
-            Step Up Your Game with Haoda Network!
-          </h2>
-          <div className="gameHaodaNetword  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center text-center gap-6 max-w-6xl mx-auto">
-            {[
-              "Unlimited access to games and streaming",
-              "Ad-free experience",
-              "Cross-platform access",
-              "Fully customizable entertainment",
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="border-2 border-yellow-400 rounded-lg p-6 bg-[#15162b] shadow-lg text-center"
-              >
-                {feature}
-              </div>
-            ))}
-          </div>
-          <p className="mt-8 text-2xl italic text-white">
-            Join Haoda Network today and level up your entertainment!
-          </p>
+          <div className="container mx-auto">
+            <h2 className="text-xl md:text-2xl font-semibold font-inter mb-6">
+              Step Up Your Game with Haoda Network!
+            </h2>
+            <div className="gameHaodaNetword  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center text-center gap-6 max-w-6xl mx-auto">
+              {[
+                "Unlimited access to games and streaming",
+                "Ad-free experience",
+                "Cross-platform access",
+                "Fully customizable entertainment",
+              ].map((feature, index) => (
+                <div
+                  key={index}
+                  className="border-2 border-yellow-400 rounded-lg p-6 bg-[#15162b] shadow-lg font-inter text-[16px] text-center"
+                >
+                  {feature}
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-xl font-medium italic font-inter text-white">
+              Join Haoda Network today and level up your entertainment!
+            </p>
+          </div> 
         </div>
       </div>
 
       {/* Games Section */}
       <div className="bg-[#1F2131] py-8 flex justify-center items-center">
-        <p className="text-yellow-400 text-center text-3xl font-bold font-chakra-petch">
+        <p className="container mx-auto text-yellow-400 text-center text-[32px] font-extrabold font-chakra-petch">
           Games on Haoda Network OTT Platform
         </p>
       </div>
 
       <div
-        className="bg-[#161829] text-center py-2 sm:py-5 lg:py-6 px-2 sm:px-4 lg:px-8"
+        className="bg-[#161829] text-center py-2 sm:py-5 lg:py-6 px-2 sm:px-4 lg:px-8 "
         style={{ backgroundImage: `url(${attach})` }}
       >
-        <h1 className="text-white text-xl leading-snug">
+        <h1 className="container mx-auto text-white font-semibold text-xl font-inter  leading-snug">
           Our app offers a diverse range of exciting games for every gamer.
           Here&apos;s what you can enjoy:
         </h1>
       </div>
 
       {/* Fantasy Games Section */}
-      <div className="bg-[#1F2131] py-8">
-        <div className="transition duration-500 ease-in-out">
+      <div className="bg-[#1F2131] py-8 opacity-94">
+        <div className="container mx-auto transition duration-500 ease-in-out">
           <div className="flex flex-wrap justify-between items-center px-4 sm:px-8 lg:px-16 mb-8">
-            <h1 className="text-yellow-400 text-lg sm:text-xl lg:text-2xl">
+            <h1 className="text-yellow-400 font-semibold font-inter text-[27px]">
               Fantasy Games
             </h1>
             <button className="text-white border-2 bg-[#25292A] px-3 py-1 rounded-md text-sm sm:text-base">
@@ -240,7 +245,7 @@ const Home = () => {
                   alt={game.name}
                   className="w-40 sm:w-48 lg:w-30 h-auto mb-4"
                 />
-                <h5 className="text-white text-sm font-chakra-petch sm:text-base lg:text-lg">
+                <h5 className="text-white text-sm font-chakra-petch font-bold text-[18px]">
                   {game.name}
                 </h5>
               </div>
@@ -249,9 +254,9 @@ const Home = () => {
         </div>
 
         {/* Traditional Games Section */}
-        <div className="transition duration-500 ease-in-out mt-24">
+        <div className="container mx-auto transition duration-500 ease-in-out mt-24">
           <div className="flex flex-wrap justify-between items-center px-4 sm:px-8 lg:px-16 mt-16 mb-8">
-            <h1 className="text-yellow-400 text-lg sm:text-xl lg:text-2xl">
+            <h1 className="text-yellow-400 font-semibold font-inter text-[27px]">
               Traditional Games
             </h1>
             <button className="text-white border-2 bg-[#25292A] px-3 py-1 rounded-md text-sm sm:text-base">
@@ -274,32 +279,31 @@ const Home = () => {
                   alt={game.name}
                   className="w-40 sm:w-48 lg:w-30 h-auto mb-4"
                 />
-                <h5 className="text-white text-sm font-chakra-petch sm:text-base lg:text-lg">
+                <h5 className="text-white text-sm font-chakra-petch font-bold text-[18px]">
                   {game.name}
                 </h5>
               </div>
             ))}
           </div>
         </div>
-        <div className="bg-[#161829] p-4 mt-8 flex justify-center items-center">
-        <p className="text-white text-center text-xl max-w-2xl">
-          These games ensure there&apos;s something for everyone, from casual
-          gamers to adrenaline junkies, making Haoda Network the ultimate
-          entertainment destination!
-        </p>
+        <div className="bg-[#161829] p-3 mt-8 flex justify-center items-center">
+          <p className="container mx-auto text-white text-center font-inter text-xl max-w-3xl">
+            These games ensure there&apos;s something for everyone, from casual
+            gamers to adrenaline junkies, making Haoda Network the ultimate
+            entertainment destination!
+          </p>
+        </div>
       </div>
-      </div>
-      
 
       {/* getting started */}
       <div className="bg-[#161829] text-center py-10 px-4 sm:px-8 lg:px-16 ">
         {/* Main Heading */}
-        <h1 className="text-yellow-400 text-4xl font-bold  mb-16 font-chakra-petch">
+        <h1 className="container mx-auto text-yellow-400 text-4xl font-bold  mb-16 font-chakra-petch">
           Getting Started
         </h1>
 
         {/* Container for Boxes */}
-        <div className="flex flex-wrap justify-center items-center gap-6">
+        <div className="container mx-auto flex flex-wrap justify-center items-center gap-6">
           {/* Box 1 */}
           <div className="relative bg-[#FEFFF2] text-[#434343] p-6 rounded-2xl shadow-md w-full max-w-[250px] h-[250px] flex flex-col items-center border-r-4 border-b-4 border-yellow-400">
             <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full bg-yellow-500 flex items-center justify-center ">
@@ -364,7 +368,7 @@ const Home = () => {
       </div>
 
       <div className="bg-[#1E2030] py-3 flex justify-center items-center">
-        <p className="text-yellow-400 text-center italic ">
+        <p className="container mx-auto text-yellow-400 text-[18px] text-center font-inter font-medium italic ">
           join Haoda Network Today
         </p>
       </div>
@@ -379,7 +383,7 @@ const Home = () => {
         <h1 className="text-yellow-400 text-3xl font-bold font-chakra-petch">
           Haoda Network: Your Ultimate Gaming Aggregator
         </h1>
-        <p className="text-white text-2xl mt-4">
+        <p className="text-white text-[18px] font-inter mt-4">
           Unlock the future of gaming with our powerful platform
         </p>
 
@@ -387,14 +391,14 @@ const Home = () => {
         <div className="max-w-5xl mx-auto bg-black bg-opacity-75 rounded-lg p-8 shadow-lg mt-16 flex flex-col md:flex-row gap-8">
           {/* Left Column - Contact Info */}
           <div className="md:w-1/2 text-left">
-            <h3 className="text-yellow-400 text-2xl">Contact Sales</h3>
+            <h3 className="text-yellow-400 text-2xl font-inter">Contact Us</h3>
 
             {/* Email */}
             <div className="mb-6 mt-4 flex items-center text-white">
               <img src={mail} alt="Email Icon" className="w-6 h-auto mr-4" />
-              <div className="mt-4">
-                For general support or queries, reach us at <br />
-                <span className="text-yellow-400 font-semibold hover:text-white">
+              <div className="text-base flex flex-wrap font-inter">
+                For general support or queries, reach us at&nbsp;
+                <span className="text-yellow-400 font-semibold hover:text-white whitespace-nowrap">
                   support@haodanetwork.com
                 </span>
               </div>
@@ -403,7 +407,7 @@ const Home = () => {
             {/* Phone */}
             <div className="mb-6 mt-4 flex items-center text-white">
               <img src={call} alt="Phone Icon" className="w-6 h-auto mr-4" />
-              <div >
+              <div className="text-base flex flex-wrap font-inter">
                 For urgent matters, contact our team at <br />
                 <span className="text-yellow-400 font-semibold hover:text-white">
                   1-800-GAMING
@@ -414,7 +418,7 @@ const Home = () => {
             {/* Hours */}
             <div className="flex mt-4 items-center text-white">
               <img src={clock} alt="Clock Icon" className="w-6 h-auto mr-4" />
-              <div >
+              <div className="text-base font-inter">
                 Available
                 <span className="font-semibold mx-1">Monday to Friday</span>,
                 from <br />
@@ -486,7 +490,7 @@ const Home = () => {
 
               <button
                 type="submit"
-                className="bg-yellow-400 text-black p-1 rounded-md w-1/2 ml-32 font-semibold hover:bg-yellow-500 transition"
+                className="bg-yellow-400 font-inter text-[16px] text-black p-1 rounded-md w-1/2 ml-32 font-semibold hover:bg-yellow-500 transition"
               >
                 Submit
               </button>
@@ -497,7 +501,7 @@ const Home = () => {
         <h1 className="text-yellow-400 text-3xl mt-16 font-bold font-chakra-petch">
           Explore Haoda Network&apos;s <br /> Game Aggregator
         </h1>
-        <p className="text-white text-2xl mt-4">
+        <p className="text-white text-2xl mt-4 font-inter">
           Haoda Network is your one-stop hub for top-tier games and seamless
           <br /> integration. Here&apos;s what we offer:
         </p>
@@ -521,16 +525,20 @@ const Home = () => {
               </div>
             </div>
             {/* Text Section */}
-            <h3 className="feature-title font-chakra-petch">Instant Integration</h3>
-            <p className="feature-description">
+            <h3 className="feature-title font-chakra-petch">
+              Instant Integration
+            </h3>
+            <p className="feature-description font-inter">
               Simplify operations with a single API for smooth game aggregation
             </p>
           </div>
 
           <div className="feature-item endlessGameVariety">
             {/* Text Section */}
-            <h3 className="feature-title font-chakra-petch">Endless Game Variety</h3>
-            <p className="feature-description">
+            <h3 className="feature-title font-chakra-petch">
+              Endless Game Variety
+            </h3>
+            <p className="feature-description font-inter">
               Access RNG, live dealer, and more, for nonstop entertainment
             </p>
             {/* Icon Container */}
@@ -549,16 +557,20 @@ const Home = () => {
               </div>
             </div>
             {/* Text Section */}
-            <h3 className="feature-title font-chakra-petch">Centralized Management</h3>
-            <p className="feature-description">
+            <h3 className="feature-title font-chakra-petch">
+              Centralized Management
+            </h3>
+            <p className="feature-description font-inter">
               Easily manage games, track, and report via our unified back office
             </p>
           </div>
 
           <div className="feature-item continuousUpdates">
             {/* Text Section */}
-            <h3 className="feature-title font-chakra-petch">Continuous Updates</h3>
-            <p className="feature-description">
+            <h3 className="feature-title font-chakra-petch">
+              Continuous Updates
+            </h3>
+            <p className="feature-description font-inter">
               Always fresh with new titles and exclusive releases
             </p>
             {/* Icon Container */}
@@ -571,8 +583,10 @@ const Home = () => {
 
           <div className="feature-item customTournaments">
             {/* Text Section */}
-            <h3 className="feature-title font-chakra-petch">Custom Tournaments</h3>
-            <p className="feature-description">
+            <h3 className="feature-title font-chakra-petch">
+              Custom Tournaments
+            </h3>
+            <p className="feature-description font-inter">
               Engage players with exciting, personalized challenges
             </p>
             {/* Icon Container */}
@@ -592,7 +606,7 @@ const Home = () => {
             </div>
             {/* Text Section */}
             <h3 className="feature-title font-chakra-petch">Crypto-Friendly</h3>
-            <p className="feature-description">
+            <p className="feature-description font-inter">
               Secure and easy crypto payments
             </p>
           </div>
@@ -600,7 +614,7 @@ const Home = () => {
           <div className="feature-item support">
             {/* Text Section */}
             <h3 className="feature-title font-chakra-petch">24/7 Support</h3>
-            <p className="feature-description">
+            <p className="feature-description font-inter">
               Reliable help, anytime you need it
             </p>
             {/* Icon Container */}
@@ -614,79 +628,81 @@ const Home = () => {
       </div>
 
       {/* partner with haoda network */}
-      <div className="bg-[#1a1b2f] py-12 px-16 flex items-center gap-12">
+      <div className="bg-[#161829] ">
         {/* Left Side - Content */}
-        <div className="w-3/5">
-          {/* Heading */}
-          <div className="flex items-center space-x-4 mb-4">
-            <img src={tick} alt="Check" className="w-10 h-10" />
-            <h2 className="text-yellow-400 text-4xl font-chakra-petch font-semibold">
-              Why Partner with Haoda Network?
-            </h2>
+        <div className="container mx-auto py-12 px-16 flex items-center gap-12">
+          <div className="w-3/5">
+            {/* Heading */}
+            <div className="flex items-center space-x-4 mb-4">
+              <img src={tick} alt="Check" className="w-10 h-10" />
+              <h2 className="text-yellow-400 text-4xl font-chakra-petch font-semibold">
+                Why Partner with Haoda Network?
+              </h2>
+            </div>
+
+            {/* Subtitle */}
+            <p className="text-white text-xl mb-6 ml-16 font-inter">
+              Haoda Network leads the way in innovation with its unified API.
+              Here&apos;s why we’re the ideal partner:
+            </p>
+
+            {/* Timeline */}
+            <div className="relative pl-4 space-y-6">
+              <div className="relative">
+                <span className="absolute -left-4 top-2 w-4 h-4 bg-yellow-400 rounded-full"></span>
+                <h3 className="text-yellow-400 text-xl ml-8 font-semibold">
+                  Fast Product Launch:
+                </h3>
+                <p className="text-white text-lg ml-8 font-inter">
+                  Get up and running in 1-4 weeks
+                </p>
+              </div>
+
+              <div className="relative">
+                <span className="absolute -left-4 top-2 w-4 h-4 bg-yellow-400 rounded-full"></span>
+                <h3 className="text-yellow-400 text-xl ml-8 font-semibold">
+                  Exceptional Offers:
+                </h3>
+                <p className="text-white text-lg ml-8 font-inter">
+                  Full range of products, payments, and services to grow your
+                  business
+                </p>
+              </div>
+
+              <div className="relative">
+                <span className="absolute -left-4 top-2 w-4 h-4 bg-yellow-400 rounded-full"></span>
+                <h3 className="text-yellow-400 text-xl ml-8 font-semibold">
+                  Gamification:
+                </h3>
+                <p className="text-white text-lg ml-8 font-inter">
+                  Boost player engagement with exciting features
+                </p>
+              </div>
+
+              <div className="relative">
+                <span className="absolute -left-4 top-2 w-4 h-4 bg-yellow-400 rounded-full"></span>
+                <h3 className="text-yellow-400 text-xl ml-8 font-semibold">
+                  Proven Success:
+                </h3>
+                <p className="text-white text-lg ml-8 font-inter">
+                  Trusted by clients—check their testimonials!
+                </p>
+              </div>
+            </div>
           </div>
 
-          {/* Subtitle */}
-          <p className="text-white text-xl mb-6 ml-16">
-            Haoda Network leads the way in innovation with its unified API.
-            Here&apos;s why we’re the ideal partner:
-          </p>
-
-          {/* Timeline */}
-          <div className="relative pl-4 space-y-6">
-            <div className="relative">
-              <span className="absolute -left-4 top-2 w-4 h-4 bg-yellow-400 rounded-full"></span>
-              <h3 className="text-yellow-400 text-xl ml-8 font-semibold">
-                Fast Product Launch:
-              </h3>
-              <p className="text-white text-lg ml-8">
-                Get up and running in 1-4 weeks
-              </p>
-            </div>
-
-            <div className="relative">
-              <span className="absolute -left-4 top-2 w-4 h-4 bg-yellow-400 rounded-full"></span>
-              <h3 className="text-yellow-400 text-xl ml-8 font-semibold">
-                Exceptional Offers:
-              </h3>
-              <p className="text-white text-lg ml-8">
-                Full range of products, payments, and services to grow your
-                business
-              </p>
-            </div>
-
-            <div className="relative">
-              <span className="absolute -left-4 top-2 w-4 h-4 bg-yellow-400 rounded-full"></span>
-              <h3 className="text-yellow-400 text-xl ml-8 font-semibold">
-                Gamification:
-              </h3>
-              <p className="text-white text-lg ml-8">
-                Boost player engagement with exciting features
-              </p>
-            </div>
-
-            <div className="relative">
-              <span className="absolute -left-4 top-2 w-4 h-4 bg-yellow-400 rounded-full"></span>
-              <h3 className="text-yellow-400 text-xl ml-8 font-semibold">
-                Proven Success:
-              </h3>
-              <p className="text-white text-lg ml-8">
-                Trusted by clients—check their testimonials!
-              </p>
-            </div>
+          {/* Right Side - Image */}
+          <div className="w-2/5 relative">
+            <img
+              src={face}
+              alt="Handshake"
+              className="w-full rounded-lg shadow-lg"
+            />
           </div>
-        </div>
-
-        {/* Right Side - Image */}
-        <div className="w-2/5 relative">
-          <img
-            src={face}
-            alt="Handshake"
-            className="w-full rounded-lg shadow-lg"
-          />
         </div>
       </div>
     </>
   );
 };
 
-export default Home;
+export default HomeDesktop;
